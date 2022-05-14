@@ -19,4 +19,4 @@ int main() {
     }  
     return 0;
 }
-//linear traversal would lead to time-out hence the use of lower_bound using an iterator
+//linear traversal would lead to time-out hence the use of lower_bound {which is O(logn)} using an iterator
