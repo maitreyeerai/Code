@@ -1,3 +1,4 @@
+//use of manipulators
 #include <iostream>
 #include <iomanip> 
 using namespace std;
