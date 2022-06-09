@@ -60,6 +60,11 @@ void free_singly_linked_list(SinglyLinkedListNode* node) {
 SinglyLinkedListNode* insertNodeAtPosition(SinglyLinkedListNode* llist, int data, int position) {
     SinglyLinkedListNode *newnode = new SinglyLinkedListNode(data);
     int c = 0;
+    if(position == 0){
+        newnode->next = llist;
+        llist = newnode;
+        return llist;
+    }
     SinglyLinkedListNode *curr, *prev;
     curr = llist;
     while(c != position){
